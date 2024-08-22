@@ -1,0 +1,51 @@
+hr{
+   position: relative;
+   top:100px;
+    color: #fff;
+}
+.footer{
+    background-color: #596e79;
+    text-align: center;
+    width:100%;
+    height: 300px;
+    padding: 20px;
+    
+}
+
+.footer-link{
+    position:relative;
+    top:150px;
+    font-size: 50px;
+    font-weight: 100;
+    color:white;
+}
+
+.social-icons {
+    margin-top: 40px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+.footer p{
+    color:white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    top:110px;
+   
+}
+@media screen and (max-width:960px){
+    .footer-link{
+        font-size: 25px;
+       
+    }
+
+}
+

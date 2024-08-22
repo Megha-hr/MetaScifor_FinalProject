@@ -1,0 +1,54 @@
+:root{
+    --margin:20px 10px ;
+}
+a{
+    text-decoration: none;
+}
+
+.blogdetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:80px;
+  
+}
+.blogdetail h1{
+    margin:var(--margin);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.blogdetail p{
+    width:700px;
+    height: auto;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align:justify;
+    margin: var(--margin);
+}
+
+
+.blogdetail img{
+    width:500px;
+    height: 300px;
+    margin: var(--margin);
+}
+
+.blogdetail button{
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    padding:10px 20px;
+    background-color: #f0f0f0; /* Light mode button background */
+    color: black;
+     margin-bottom: 10px;
+   align-self: center;
+    cursor:pointer;
+    
+}
+
+.blogdetail button:hover{
+    background-color: #dddd;
+}

@@ -1,0 +1,39 @@
+body.light-mode {
+    background-color: #f0ece2;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.light {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+.dark {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/*specific for components*/
+.BlogList.light,.BlogDetail.light,.Contactus.light{
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+.BlogList.dark,.BlogDetail.dark,.Contactus.dark{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.Contactus.dark{
+    background-image: url("../assets/darkmodecontact.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+   
+}
+

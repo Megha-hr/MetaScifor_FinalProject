@@ -1,0 +1,22 @@
+.dropdown-menu{
+    background:#596e79;
+    color:white;
+    width:70px;
+    border:none;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 960px) {
+
+.dropdown-menu {
+    background:#242222; /* Match navbar background */
+    color: white;
+    width: 70px;
+    border: none;
+    padding: 5px;
+  }
+  
+  .dropdown-menu:focus {
+    outline: none;
+  }
+}

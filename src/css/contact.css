@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ :root{
+  --margin-top: 20px;
+ }
+.contactform{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/lightmodecontact.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contactform h1{
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+form{
+    width: 100%;
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background:rgba(255,255,255,0.15);
+    box-shadow:0 8px 32px 0 rgba(31,38,135,.37);
+    backdrop-filter:blur(5px);
+    border-radius:10px;
+    border-radius: 5px;
+    padding:  30px;
+  margin-top: var(--margin-top);
+}
+
+label{
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.error {
+    color: red;
+    font-size: 12px;
+   
+  }
+
+  .contactform button{
+    width: 100%;
+    max-width: 250px;
+    height: 40px;
+    padding:10px 20px;
+    background-color: #f0f0f0; /* Light mode button background */
+    color: black;
+    border: none;
+    margin-top: var(--margin-top);
+   align-self: center;
+    cursor:pointer;
+}
+
+.contactform button:hover{
+    background-color: #dddddd;
+  color:black;
+}
+@media screen and (max-width:960px){
+    form{
+         width: 90%;
+        max-width: 300px;
+        align-items: center;
+        padding:50px;
+    }
+  .contactform button{
+        display: block;
+     
+    }
+    
+    
+
+}
+

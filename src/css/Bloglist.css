@@ -1,0 +1,179 @@
+/*BlogList*/
+:root {
+  --box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+p {
+  line-height: 1.4rem;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+}
+h3 {
+  margin: 50px 10px;
+  text-align: center;
+}
+ul {
+  margin-left: 5px;
+}
+
+.heading {
+  position: relative;
+  top: 80px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(245, 214, 214, 0.15),
+      rgba(245, 214, 214, 0.15)
+    ),
+    /* Color overlay */ url("../assets/welcome-min.jpg"); /* Background image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image in the element */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  z-index: -1;
+  color: white;
+}
+.Blogmain {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-wrap: wrap;
+  margin-top: 80px;
+  overflow: hidden;
+}
+.Blogmainsub {
+  width: 70%;
+}
+.card {
+  width: 360px;
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  cursor: pointer;
+  margin: 15px 5px;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 1px 1px 8px #d4ecff;
+  background-color: #dddddd;
+  transform: translateY(-2px);
+}
+
+.card-detail {
+  padding: 15px;
+  text-align: justify;
+}
+.card-detail p {
+  margin: 20px 0px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-dark {
+  background-color: #3c3d37;
+}
+.card-light {
+  background-color: #ecdfcc;
+}
+.link:hover {
+  color: blue;
+}
+.lglink {
+  color: black;
+}
+.darklink {
+  color: white;
+}
+
+.popularPost {
+  width: 300px;
+  height: 300px;
+  padding: 5px 15px;
+  text-align: justify;
+  border: 1px solid black;
+  margin-top: 100px;
+  background: #f0ece2;
+  box-shadow: var(--box-shadow);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.popularPost-dark {
+  background-color: #3c3d37;
+  color: #ffffff;
+}
+.popularPost-light {
+  background-color: #ecdfcc;
+}
+
+.loaderButton {
+  width: 100%;
+  max-width: 250px;
+  height: 40px;
+  padding: 10px 20px;
+  background-color: #f0f0f0; /* Light mode button background */
+  color: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  margin: 10px;
+  cursor: pointer;
+}
+.loaderButton:hover {
+  background-color: #dddddd;
+  color: black;
+}
+
+.loader {
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.loader:after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 3px solid #f9fdff;
+  border-color: #f9fdff transparent;
+  animation: loader-spin 1.2s linear infinite;
+}
+
+@keyframes loader-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 960) {
+  .Blogmain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loaderButton {
+    position: relative;
+    bottom: 10px;
+  }
+}
