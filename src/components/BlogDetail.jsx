@@ -24,10 +24,13 @@ function BlogDetail() {
     return <div>Loading...</div>;
   }
   return (
-    <div className={`BlogDetail ${theme} blogdetail`}>
+    <div className={` ${theme} single-blog`}>
+      <div className="blogdetail">
       <h1>{BlogData.fields.blogTitle}</h1>
       <img src={BlogData.fields.coverImage.fields.file.url} alt="blog image" />
       <p>{documentToReactComponents(BlogData.fields.content)}</p>
+      
+      </div>
       <Link to="/">
         <button>go to home</button>
       </Link>

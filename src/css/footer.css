@@ -1,27 +1,31 @@
+
 hr{
-   position: relative;
-   top:100px;
-    color: #fff;
+    margin-top: 40px;
+    border: none;
+    border-top: 2px solid #fff;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer{
     background-color: #596e79;
     text-align: center;
     width:100%;
-    height: 300px;
+    height: auto;
     padding: 20px;
+    overflow: hidden;
     
 }
 
 .footer-link{
-    position:relative;
-    top:150px;
     font-size: 50px;
     font-weight: 100;
-    color:white;
+    color: white;
+    margin-bottom: 40px
 }
 
 .social-icons {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .social-icons a {
@@ -34,12 +38,10 @@ hr{
     color: #ccc;
 }
 .footer p{
-    color:white;
+    color: white;
     text-align: center;
     padding: 10px;
-    position: relative;
-    top:110px;
-   
+    margin-top: 20px;
 }
 @media screen and (max-width:960px){
     .footer-link{

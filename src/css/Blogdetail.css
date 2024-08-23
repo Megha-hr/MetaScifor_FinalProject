@@ -1,18 +1,28 @@
 :root{
-    --margin:20px 10px ;
+    --margin:20px 30px ;
 }
 a{
     text-decoration: none;
 }
 
-.blogdetail{
+.single-blog{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+
+.blogdetail{
+    width:100%;
+    max-width: 700px;
+    padding: 20px;
     position: relative;
-    top:80px;
-  
+    top: 80px;
+    background-color: var(--bg-color, #fff);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 150px; 
 }
 .blogdetail h1{
     margin:var(--margin);
@@ -21,8 +31,7 @@ a{
 }
 
 .blogdetail p{
-    width:700px;
-    height: auto;
+    
     font-size: 1.2rem;
     line-height: 1.7rem;
     text-align:justify;
@@ -31,24 +40,76 @@ a{
 
 
 .blogdetail img{
-    width:500px;
-    height: 300px;
-    margin: var(--margin);
+    width:100%;
+    max-width: 500px;
+    height: auto;
+    margin:20px 60px;
+    border-radius: 8px;
+   align-self: center;
 }
 
-.blogdetail button{
+.single-blog button{
     width: 100%;
-    max-width: 250px;
+    max-width: 450px;
     height: 40px;
     padding:10px 20px;
     background-color: #f0f0f0; /* Light mode button background */
     color: black;
-     margin-bottom: 10px;
-   align-self: center;
-    cursor:pointer;
+     margin-bottom: 90px;
+     align-self: center;
+     cursor: pointer;
+     border-radius: 5px;
+     transition: background-color 0.3s ease;
     
 }
 
-.blogdetail button:hover{
+.single-blog button:hover{
     background-color: #dddd;
+}
+@media screen and (max-width: 960px) {
+    .blogdetail{
+       padding: 15px;
+       top:60px
+    }
+    
+    .blogdetail h1{
+       
+        font-size: 1.5rem;
+        
+    }
+    .blogdetail p{
+        
+        font-size: 1rem;
+        line-height: 1.5rem;
+       
+    }
+    .blogdetail img {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .blogdetail button {
+        margin-bottom: 30px;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .blogdetail {
+        top: 50px;
+        padding: 10px;
+    }
+
+    .blogdetail h1 {
+        font-size: 1.2rem;
+    }
+
+    .blogdetail p {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+    }
+
+    .blogdetail button {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
