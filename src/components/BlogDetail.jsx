@@ -5,6 +5,7 @@ import { ContentfulContext } from "./ContentfulContext";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import "../css/Blogdetail.css";
 
+
 function BlogDetail() {
   const { data: Posts } = useContext(ContentfulContext);
   const { theme } = useContext(ThemeContext);
@@ -25,7 +26,7 @@ function BlogDetail() {
   }
   return (
     <div className={` ${theme} single-blog`}>
-      <div className="blogdetail">
+      <div   className={theme === "light" ? "blogdetail" : "blogdetail-dark blogdetail"}>
       <h1>{BlogData.fields.blogTitle}</h1>
       <img src={BlogData.fields.coverImage.fields.file.url} alt="blog image" />
       <p>{documentToReactComponents(BlogData.fields.content)}</p>
